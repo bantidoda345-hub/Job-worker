@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banti Job Portal - ₹50 Payment Apply</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><i class="fas fa-briefcase"></i> Banti Jobs</h2>
+                </div>
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#worker" class="nav-link">Worker Apply (₹50)</a>
+                    <a href="#shopkeeper" class="nav-link">Post Job (₹50)</a>
+                    <a href="admin.html" class="admin-btn">Admin Panel</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>🔥 Naukri Paao - ₹50 Payment Se!</h1>
+            <p>Worker Apply ya Job Post - Dono me sirf ₹50 payment</p>
+            <div class="hero-buttons">
+                <a href="#worker" class="btn btn-primary">Worker Apply ₹50</a>
+                <a href="#shopkeeper" class="btn btn-secondary">Post Job ₹50</a>
+            </div>
+            <div style="margin-top: 30px; color: #ffd700; font-weight: bold;">
+                💰 Commission: 9878172003 (GP/PP)
+            </div>
+        </div>
+    </section>
+
+    <!-- Worker Section with Payment -->
+    <section id="worker" class="section worker-section">
+        <div class="container">
+            <h2><i class="fas fa-user-tie"></i> Worker Registration (₹50)</h2>
+            <div id="workerFormContainer" class="form-container">
+                <form id="workerForm">
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input type="text" id="workerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Aadhar Number *</label>
+                        <input type="text" id="workerAadhar" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number *</label>
+                        <input type="tel" id="workerPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Skills (Comma separated) *</label>
+                        <textarea id="workerSkills" required placeholder="Sales, Computer, Driving..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Location *</label>
+                        <input type="text" id="workerLocation" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Experience (Years)</label>
+                        <input type="number" id="workerExp" min="0">
+                    </div>
+                    <div class="payment-section">
+                        <div class="payment-info">
+                            <h4>💳 Payment Required</h4>
+                            <p><strong>₹50/-</strong> Application Fee</p>
+                            <p><i class="fas fa-lock"></i> Secure Payment | UPI/Card</p>
+                        </div>
+                        <button type="button" id="payWorkerBtn" class="btn btn-primary full-width">
+                            <i class="fas fa-credit-card"></i> Pay ₹50 & Apply Now
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div id="workerSuccess" class="success-message hidden">
+                <i class="fas fa-check-circle" style="font-size: 4rem; color: #4caf50;"></i>
+                <h3>✅ Payment Successful!</h3>
+                <p>Your application submitted to Admin for approval!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopkeeper Section with Payment -->
+    <section id="shopkeeper" class="section shopkeeper-section">
+        <div class="container">
+            <h2><i class="fas fa-store"></i> Post Job (₹50)</h2>
+            <div id="shopkeeperFormContainer" class="form-container">
+                <form id="shopkeeperForm">
+                    <div class="form-group">
+                        <label>Shop Name *</label>
+                        <input type="text" id="shopName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Owner Name *</label>
+                        <input type="text" id="ownerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Location *</label>
+                        <input type="text" id="shopLocation" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Job Type *</label>
+                        <select id="jobType" required>
+                            <option value="">Select Job</option>
+                            <option value="Sales Boy">Sales Boy</option>
+                            <option value="Helper">Helper</option>
+                            <option value="Driver">Driver</option>
+                            <option value="Computer Operator">Computer Operator</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Salary (₹/month) *</label>
+                        <input type="number" id="salary" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Timing *</label>
+                        <input type="text" id="timing" required placeholder="10AM-8PM">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number *</label>
+                        <input type="tel" id="shopPhone" required>
+                    </div>
+                    <div class="payment-section">
+                        <div class="payment-info">
+                            <h4>💳 Payment Required</h4>
+                            <p><strong>₹50/-</strong> Job Post Fee</p>
+                            <p><i class="fas fa-lock"></i> Secure Payment | UPI/Card</p>
+                        </div>
+                        <button type="button" id="payShopkeeperBtn" class="btn btn-primary full-width">
+                            <i class="fas fa-credit-card"></i> Pay ₹50 & Post Job
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div id="shopkeeperSuccess" class="success-message hidden">
+                <i class="fas fa-check-circle" style="font-size: 4rem; color: #4caf50;"></i>
+                <h3>✅ Payment Successful!</h3>
+                <p>Your job posted to Admin for approval!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section jobs-section">
+        <div class="container">
+            <h2><i class="fas fa-list"></i> Live Jobs (Admin Approved)</h2>
+            <div id="jobsList" class="jobs-grid"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Banti Jobs | Commission: <strong>9878172003</strong></p>
+            <p>Payment Gateway: Razorpay | Admin: BANTIBOSS00</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
